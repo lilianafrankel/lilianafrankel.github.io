@@ -33,3 +33,6 @@ nav a:hover { color: #000; }
 main { margin-top: 2rem; }
 .work-item { margin-bottom: 1.5rem; }
 .work-item h3 { margin: 0; }
+
+main a { color: #444; }
+main a:hover { color: #000; }
