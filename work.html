@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liliana Frankel - Selected publications</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Liliana Frankel</a></h1>
+    <nav>
+      <a href="work.html">
+        <span data-lang="en">Selected publications</span><span data-lang="es" hidden>Publicaciones recientes</span>
+      </a>
+      <span class="toggle">
+        <button onclick="setLang('en')">EN</button>
+        <button onclick="setLang('es')">ES</button>
+      </span>
+    </nav>
+  </header>
+
+  <main>
+    <div class="work-item">
+      <h3><a href="https://link-to-project.com">Project title</a></h3>
+      <p data-lang="en">One-line description of the project.</p>
+      <p data-lang="es" hidden>Descripción de una línea del proyecto.</p>
+    </div>
+
+    <div class="work-item">
+      <h3><a href="https://link-to-project.com">Another project title</a></h3>
+      <p data-lang="en">One-line description of the project.</p>
+      <p data-lang="es" hidden>Descripción de una línea del proyecto.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
