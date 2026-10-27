@@ -58,3 +58,6 @@ p { margin: 0 0 36px 0; }
 
 main a { color: #444; }
 main a:hover { color: #000; }
+
+.work-item h3 a { color: #c0392b; }
+.work-item h3 a:hover { color: #8e1b10; }
