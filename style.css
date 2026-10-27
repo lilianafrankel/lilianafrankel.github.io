@@ -37,13 +37,13 @@ nav a:hover { color: #000; }
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
   line-height: 1;
-  color: #444;
+  color: #228b22;
   background: transparent;
   border: none;
   padding: 0 0.75rem 0 0;
   cursor: pointer;
 }
-.toggle button:hover { color: #000; }
+.toggle button:hover { color: #145214; }
 main {
   flex: 1;
   box-sizing: border-box;
