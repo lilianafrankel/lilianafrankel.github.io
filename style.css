@@ -1,12 +1,17 @@
+html {
+  background-color: #eeeeee;
+  background-image: linear-gradient(90deg, transparent 70px, #f0a8c0 70px, #f0a8c0 72px, transparent 72px);
+}
 body {
   font-family: Georgia, serif;
   font-size: 22px;
-  max-width: 640px;
   margin: 0;
-  padding: 2rem 1rem;
-  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 36px;
   color: #444;
-  background: #f3f0e8;
+  background: transparent;
 }
 h1, h2, h3 {
   font-family: "Courier New", Courier, monospace;
@@ -19,12 +24,14 @@ header {
   flex-wrap: wrap;
   align-items: center;
   gap: 0 1.5rem;
+  max-width: 640px;
+  padding: 36px 1rem 18px 100px;
 }
 header h1 { font-size: 40px; margin: 0; }
 header h1 a { color: inherit; text-decoration: none; }
 header::after { content: ""; order: 1; flex-basis: 100%; height: 0; }
 nav { display: contents; }
-nav a { order: 2; margin-top: 0.5rem; font-size: 30px; text-decoration: none; color: #888; }
+nav a { order: 2; font-size: 30px; text-decoration: none; color: #888; }
 nav a:hover { color: #000; }
 .toggle { order: 1; align-self: center; }
 .toggle button {
@@ -38,8 +45,16 @@ nav a:hover { color: #000; }
   cursor: pointer;
 }
 .toggle button:hover { color: #000; }
-main { margin-top: 2rem; }
-.work-item { margin-bottom: 1.5rem; }
+main {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 1rem 36px 100px;
+  background-image: linear-gradient(transparent 35px, #bcd6ee 35px);
+  background-size: 100% 36px;
+}
+main > * { max-width: 540px; }
+p { margin: 0 0 36px 0; }
+.work-item { margin-bottom: 36px; }
 .work-item h3 { margin: 0; }
 
 main a { color: #444; }
