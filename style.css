@@ -21,19 +21,18 @@ h1, h2, h3 {
 }
 header {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
   max-width: 640px;
   padding: 36px 1rem 18px 100px;
 }
 header h1 { font-size: 40px; margin: 0; }
 header h1 a { color: inherit; text-decoration: none; }
-header::after { content: ""; order: 1; flex-basis: 100%; height: 0; }
 nav { display: contents; }
 nav a { order: 2; font-size: 30px; text-decoration: none; color: #888; }
 nav a:hover { color: #000; }
-.toggle { order: 1; align-self: center; }
+.toggle { order: 1; }
 .toggle button {
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
@@ -41,14 +40,14 @@ nav a:hover { color: #000; }
   color: #444;
   background: transparent;
   border: none;
-  padding: 0 0.25rem;
+  padding: 0 0.75rem 0 0;
   cursor: pointer;
 }
 .toggle button:hover { color: #000; }
 main {
   flex: 1;
   box-sizing: border-box;
-  padding: 0 1rem 36px 100px;
+  padding: 36px 1rem 36px 100px;
   background-image: linear-gradient(transparent 35px, #bcd6ee 35px);
   background-size: 100% 36px;
 }
